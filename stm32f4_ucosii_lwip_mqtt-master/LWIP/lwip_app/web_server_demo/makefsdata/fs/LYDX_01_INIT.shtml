@@ -1,0 +1,184 @@
+<!DOCTYPE html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>LYDX_01_INIT</title>
+ <style type="text/css">
+        .bodystyle {
+            margin: 0 auto;
+            width: 1100px;
+            background: #d5d5d7;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+        }
+
+        .head span {
+            float: right;
+            font-weight: 800;
+            font-size: 40px;
+            margin: 30px 30px 0px 0px;
+        }
+
+        .head {
+            background-color: #eeedff;
+            height: 150px;
+        }
+
+        .field {
+            text-align: center;
+            margin-top: 10px;
+            border: none;
+            overflow: hidden;
+        }
+
+        .submit {
+            height: 38px;
+            font: 15px;
+        }
+
+        .input {
+            margin-right: 100px;
+            height: 35px;
+            width: 180px;
+            font-size: 20px;
+        }
+
+        .input1 {
+            margin-right: 220px;
+            height: 35px;
+            width: 180px;
+            font-size: 20px;
+        }
+
+        label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: right;
+            width: 200px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body class="bodystyle">
+    <form action="/init.cgi" method="GET">
+        <div style="background-color:#FFFFFF;height:1200px">
+            <div class="head">
+                <img src="image/logo.png" class="logo" alt="南京凌云科技有限公司" title="南京凌云科技发展有限公司"
+                    style="margin:20px 0px 0px 0px;" />
+                <span>LYDX_01</span>
+                <p style="font-weight:800;font-size:27px">南京凌云科技发展有限公司</p>
+            </div>
+
+
+            <div class="field">
+                <div class="font">
+                    <label> </label>
+                    <p style="font-weight:550;font-size:22px;float: left;width:73%;">设备名称</p>
+                    <p style="font-weight:550;font-size:22px;float: left;margin-left: -130px;">功率</p>
+
+                </div>
+                <div style="margin-top: 70px;">
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="1">1.</label>
+                        <input  type="text" class="input" name="device" placeholder="请输入设备名称" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" placeholder="请输入设备功率" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="2">2.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="3">3.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="4">4.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="5">5.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="6">6.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="7">7.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="8">8.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="9">9.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="10">10.</label>
+                        <input type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="11">11.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="12">12.</label>
+                        <input type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="13">13.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                    <p style="font-weight:550;font-size:20px">
+                        <label for="14">14.</label>
+                        <input  type="text" class="input" name="device" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                        <input  type="text" class="input1" name="power" value="0" onfocus="if(value=='0'){value=''}" onblur="if (value==''){value='0'}">
+                    </P>
+                </div>
+                <p>
+
+                    <input id="submit" type="submit" value="保存" class="submit">
+                </p>
+            </div>
+
+
+    </form>
+    <script>
+
+
+        document.getElementById("submit").onclick = function () {
+            // var v1 = document.getElementById("text1").value;
+            // var v2 = document.getElementById("text2").value;
+            
+            // if (v1 != "" && v2 != "") {
+            //     alert("保存成功！！")
+            // } else {
+            //     alert("保存失败！！")
+            // }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

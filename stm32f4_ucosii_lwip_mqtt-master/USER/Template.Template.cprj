@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cprj schemaVersion="0.0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CPRJ.xsd">
+
+  <created timestamp="2020-11-30T15:02:36" tool="uVision V5.30.0.0"/>
+
+  <info isLayer="false">
+    <description/>
+    <category/>
+    <keywords/>
+    <license/>
+    <url/>
+  </info>
+
+  <packages>
+    <package name="STM32F4xx_DFP" vendor="Keil"/>
+  </packages>
+
+  <compilers>
+    <compiler name="AC5" version="5.0.0:5.99.99"/>
+  </compilers>
+
+  <target Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="SP_FPU" Dmve="NO_MVE" Dname="STM32F407ZG" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="STMicroelectronics:13">
+    <output list="../OBJ/" name="Template" obj="../OBJ/" type="exe"/>
+    <ldflags add="--callgraph --entry=Reset_Handler --info sizes --info summarysizes --info totals --info unused --info veneers --load_addr_map_info --map --strict --summary_stderr --symbols --xref" compiler="AC5" file="./Template.Template.sct"/>
+    <cflags add="--apcs=interwork -DUSE_STDPERIPH_DRIVER -I ../CORE -I ../FATFS/exfuns -I ../FATFS/src -I ../FWLIB/STM32F4x7_ETH_Driver/inc -I ../FWLIB/STM32F4xx_StdPeriph_Driver/inc -I ../HARDWARE/DCMI -I ../HARDWARE/DS18B20 -I ../HARDWARE/ETHERNET -I ../HARDWARE/IIC -I ../HARDWARE/KEY -I ../HARDWARE/LCD -I ../HARDWARE/LED -I ../HARDWARE/OV2640 -I ../HARDWARE/SDIO -I ../HARDWARE/SHT30 -I ../HARDWARE/SPI -I ../HARDWARE/SRAM -I ../HARDWARE/STMFLASH -I ../HARDWARE/TIMER -I ../HARDWARE/U2GBK -I ../HARDWARE/W25QXX -I ../LWIP -I ../LWIP/arch -I ../LWIP/lwip-1.4.1/src/include -I ../LWIP/lwip-1.4.1/src/include/ipv4 -I ../LWIP/lwip-1.4.1/src/include/lwip -I ../LWIP/lwip-1.4.1/src/include/netif -I ../LWIP/lwip_app/lwip_comm -I ../LWIP/lwip_app/tcp_client -I ../LWIP/lwip_app/web_server_demo -I ../LWIP/lwip_header -I ../MALLOC -I ../PICTURE -I ../SYSTEM/commit -I ../SYSTEM/delay -I ../SYSTEM/exit -I ../SYSTEM/sys -I ../SYSTEM/usart -I ../SYSTEM/usart2 -I ../TEXT -I ../UCOSII/CONFIG -I ../UCOSII/CORE -I ../UCOSII/PORT -I ../USER -I ../USMART -I ../mqtt/app -I ../mqtt/cjson -I ../mqtt/hmac_sha1/hmac -I ../mqtt/hmac_sha1/sha -I ../mqtt/src -I ../mqtt/transport -Id:/Keil_v5/ARM/CMSIS/Include -O3 -g" compiler="AC5"/>
+    <asflags add="--apcs=interwork  --xref -Id:/Keil_v5/ARM/CMSIS/Include -g" compiler="AC5"/>
+  </target>
+
+  <files>
+    <group name="USER">
+      <file category="sourceC" name="./main.c"/>
+      <file category="sourceC" name="./stm32f4xx_it.c"/>
+      <file category="sourceC" name="./system_stm32f4xx.c"/>
+    </group>
+    <group name="HARDWARE">
+      <file category="sourceC" name="../HARDWARE/KEY/key.c"/>
+      <file category="sourceC" name="../HARDWARE/LED/led.c"/>
+      <file category="sourceC" name="../HARDWARE/TIMER/timer.c"/>
+      <file category="sourceC" name="../HARDWARE/LCD/lcd.c"/>
+      <file category="sourceC" name="../HARDWARE/ETHERNET/LAN8720.c"/>
+      <file category="sourceC" name="../HARDWARE/SRAM/sram.c"/>
+      <file category="sourceC" name="../HARDWARE/DS18B20/ds18b20.c"/>
+      <file category="sourceC" name="../HARDWARE/U2GBK/U2GBK.c"/>
+      <file category="sourceC" name="../TEXT/text.c"/>
+      <file category="sourceC" name="../HARDWARE/SPI/spi.c"/>
+      <file category="sourceC" name="../HARDWARE/W25QXX/w25qxx.c"/>
+      <file category="sourceC" name="../HARDWARE/SDIO/sdio_sdcard.c"/>
+      <file category="sourceC" name="../TEXT/fontupd.c"/>
+      <file category="sourceC" name="../HARDWARE/OV2640/sccb.c"/>
+      <file category="sourceC" name="../HARDWARE/STMFLASH/stmflash.c"/>
+      <file category="sourceC" name="../HARDWARE/SHT30/sht30.c"/>
+      <file category="sourceC" name="../HARDWARE/IIC/myiic.c"/>
+    </group>
+    <group name="CORE">
+      <file category="header" name="../CORE/core_cm4.h"/>
+      <file category="header" name="../CORE/core_cm4_simd.h"/>
+      <file category="sourceAsm" name="../CORE/startup_stm32f40_41xxx.s"/>
+    </group>
+    <group name="FWLIB">
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/misc.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4x7_ETH_Driver/src/stm32f4x7_eth.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c"/>
+      <file category="sourceC" name="../FWLIB/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c"/>
+    </group>
+    <group name="SYSTEM">
+      <file category="sourceC" name="../SYSTEM/delay/delay.c"/>
+      <file category="sourceC" name="../SYSTEM/sys/sys.c"/>
+      <file category="sourceC" name="../SYSTEM/usart/usart.c"/>
+      <file category="sourceC" name="../SYSTEM/exit/exit.c"/>
+      <file category="sourceC" name="../SYSTEM/commit/commit.c"/>
+      <file category="sourceC" name="../SYSTEM/usart2/usart2.c"/>
+    </group>
+    <group name="LWIP-APP">
+      <file category="sourceC" name="../LWIP/lwip_app/lwip_comm/lwip_comm.c"/>
+      <file category="sourceC" name="../LWIP/lwip_app/tcp_client/tcp_client.c"/>
+      <file category="sourceC" name="../LWIP/lwip_app/web_server_demo/fs.c"/>
+      <file category="sourceC" name="../LWIP/lwip_app/web_server_demo/httpd.c"/>
+      <file category="sourceC" name="../LWIP/lwip_app/web_server_demo/httpd_cgi_ssi.c"/>
+    </group>
+    <group name="LWIP-NETIF">
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/netif/etharp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/netif/ethernetif.c"/>
+    </group>
+    <group name="LWIP-CORE">
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/autoip.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/icmp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/igmp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/inet.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/inet_chksum.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/ip.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/ip_addr.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/ipv4/ip_frag.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/def.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/dhcp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/dns.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/init.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/memp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/netif.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/pbuf.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/raw.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/stats.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/tcp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/tcp_in.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/tcp_out.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/timers.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/udp.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/core/mem.c"/>
+    </group>
+    <group name="LWIP-ARCH">
+      <file category="sourceC" name="../LWIP/arch/sys_arch.c"/>
+    </group>
+    <group name="LWIP-API">
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/api_lib.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/api_msg.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/err.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/netbuf.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/netdb.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/netifapi.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/sockets.c"/>
+      <file category="sourceC" name="../LWIP/lwip-1.4.1/src/api/tcpip.c"/>
+    </group>
+    <group name="UCOSII_CORE">
+      <file category="sourceC" name="../UCOSII/CORE/os_core.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_flag.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_mbox.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_mem.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_mutex.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_q.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_sem.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_task.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_time.c"/>
+      <file category="sourceC" name="../UCOSII/CORE/os_tmr.c"/>
+    </group>
+    <group name="UCOSII_PORT">
+      <file category="sourceC" name="../UCOSII/PORT/os_cpu_c.c"/>
+      <file category="sourceAsm" name="../UCOSII/PORT/os_cpu_a.asm"/>
+      <file category="header" name="../UCOSII/PORT/os_cpu.h"/>
+    </group>
+    <group name="UCOSII_CONFIG">
+      <file category="header" name="../UCOSII/CONFIG/includes.h"/>
+      <file category="header" name="../UCOSII/CONFIG/os_cfg.h"/>
+    </group>
+    <group name="MALLOC">
+      <file category="sourceC" name="../MALLOC/malloc.c"/>
+    </group>
+    <group name="mqtt/app">
+      <file category="sourceC" name="../mqtt/app/mqtt_app.c"/>
+    </group>
+    <group name="mqtt/src">
+      <file category="sourceC" name="../mqtt/src/MQTTConnectClient.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTConnectServer.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTDeserializePublish.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTFormat.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTPacket.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTSerializePublish.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTSubscribeClient.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTSubscribeServer.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTUnsubscribeClient.c"/>
+      <file category="sourceC" name="../mqtt/src/MQTTUnsubscribeServer.c"/>
+    </group>
+    <group name="mqtt/transport">
+      <file category="sourceC" name="../mqtt/transport/transport.c"/>
+    </group>
+    <group name="mqtt/hmac_sha1">
+      <file category="sourceC" name="../mqtt/hmac_sha1/sha/sha1.c"/>
+      <file category="sourceC" name="../mqtt/hmac_sha1/hmac/hmac_sha1.c"/>
+    </group>
+    <group name="mqtt/cjson">
+      <file category="sourceC" name="../mqtt/cjson/cJSON.c"/>
+    </group>
+    <group name="FATFS">
+      <file category="sourceC" name="../FATFS/exfuns/exfuns.c"/>
+      <file category="sourceC" name="../FATFS/exfuns/fattester.c"/>
+      <file category="sourceC" name="../FATFS/exfuns/mycc936.c"/>
+      <file category="sourceC" name="../FATFS/src/diskio.c"/>
+      <file category="sourceC" name="../FATFS/src/ff.c"/>
+    </group>
+    <group name="USMART">
+      <file category="sourceC" name="../USMART/usmart.c"/>
+      <file category="sourceC" name="../USMART/usmart_config.c"/>
+      <file category="sourceC" name="../USMART/usmart_str.c"/>
+    </group>
+    <group name="PICTURE">
+      <file category="sourceC" name="../PICTURE/bmp.c"/>
+      <file category="sourceC" name="../PICTURE/gif.c"/>
+      <file category="sourceC" name="../PICTURE/piclib.c"/>
+      <file category="sourceC" name="../PICTURE/tjpgd.c"/>
+    </group>
+  </files>
+
+</cprj>

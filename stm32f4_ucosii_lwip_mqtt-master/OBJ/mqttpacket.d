@@ -1,0 +1,11 @@
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTPacket.c
+..\obj\mqttpacket.o: ..\mqtt\src\StackTrace.h
+..\obj\mqttpacket.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTPacket.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTConnect.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTPublish.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTSubscribe.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTUnsubscribe.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTFormat.h
+..\obj\mqttpacket.o: ..\mqtt\src\MQTTPacket.h
+..\obj\mqttpacket.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
